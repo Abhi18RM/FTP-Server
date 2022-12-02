@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>upload</title>
+    <style>
+      body{
+        background-color: rgba(32, 50, 85, 0.917);
+      }
+
+      .main-head{
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        margin-top:90px;
+        color: white;
+      }
+
+      .side-head{
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        margin-top:65px;
+        color: white;
+      }
+      .main-con{
+        background-color: rgb(53, 87, 118);
+        color: white;
+        text-align: center;
+        align-items: center;
+        font-family: 'Nunito', sans-serif;
+        justify-content: center;
+        padding: 5rem;
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 0.5rem;
+      }
+
+      .new-button {
+        display: inline-block;
+        font-family: 'Nunito', sans-serif;
+        padding: 8px 12px;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 4px;
+        background-color:rgb(53, 87, 118);
+        font-size: 16px;
+        color: #fff;
+      }
+      input[type="file"] {
+        /* position: absolute; */
+        /* z-index: -1; */
+        top: 6px;
+        left: 0;
+        font-size: 15px;
+        color: rgb(153, 153, 153);
+      }
+      
+      .button-style {
+        background-color: white;
+        font-family: 'Poppins', sans-serif;
+        color: rgba(35, 14, 191, 0.856);
+        padding: 1rem;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="main-head">Small Business Network Design with Guest Network</h1>
+    <h2 class="side-head">Upload Files</h2>
+    <div class="main-con">    
+      <form action="/upload" enctype="multipart/form-data" method="post">
+      <div class="form-group">
+        <input type="file" class="form-control-file new-button" name="uploaded_file" />
+        <br>
+        <br>
+        <input id="upload" type="submit" value="Upload" class="button-style" />
+      </div>
+    </form>
+    </div>
+  </body>
+</html>
